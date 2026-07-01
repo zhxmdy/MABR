@@ -1,7 +1,4 @@
-﻿# GL-MA-RAG: Global-Local Missingness-Aware Retrieval Framework
-
-> **Version 2.0** - Pattern Recognition Submission
-
+﻿
 A comprehensive credit risk prediction framework under missing data, featuring information-theoretic weight design, multimodal deep fusion, Bayesian uncertainty quantification, and stratified retrieval.
 
 ## Project Structure
