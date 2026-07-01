@@ -9,12 +9,10 @@ A comprehensive credit risk prediction framework under missing data, featuring i
 ```
 gl-ma-rag/
 ├── main.py                       # Entry point (run: python main.py)
-├── 缺失数据处理-v18-全.py           # Original monolithic file (reference)
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # This file
-├── algorithm.tex                 # LaTeX pseudocode (KBS journal format)
 ├── results/                      # Output directory
-└── gl_ma_rag/                    # Package directory
+└── mbar/                    # Package directory
     ├── __init__.py               # Package init (imports all modules)
     ├── config.py                 # Global configuration + matplotlib setup
     ├── metrics.py                # Evaluation metrics (AUC, G-Mean, etc.)
@@ -66,7 +64,7 @@ python main.py
 Interactive menu with 6 options:
 
 1. **Complete Multi-Round Experiment** - All model comparisons with multiple runs
-2. **Single GL-MA-RAG v3.0 Demo** - Quick verification with interpretability analysis
+2. **Single mbar v3.0 Demo** - Quick verification with interpretability analysis
 3. **Ensemble Prediction Visualization** - Confidence intervals, model weights
 4. **Dimensionality Reduction Analysis** - PCA / UMAP / t-SNE comparison
 5. **Ablation Study** - Validate component contributions
@@ -86,7 +84,7 @@ MECHS = ['MNAR']                          # MCAR / MAR / MNAR
 
 ## Core Algorithm
 
-The GL-MA-RAG framework integrates three key innovations:
+The mbar framework integrates three key innovations:
 
 1. **Cost-Sensitive Bayesian Prediction** - Beta-Binomial conjugate model with adaptive FP/FN costs
 2. **Stratified Retrieval** - Class-balanced FAISS retrieval ensuring minority class representation
